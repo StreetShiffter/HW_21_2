@@ -185,6 +185,18 @@ files = [
 ]
 
 [[package]]
+name = "myserver"
+version = "0.0.5"
+description = "A small example package"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "myserver-0.0.5-py3-none-any.whl", hash = "sha256:15b7833347caf1240a724b3a506be2666dcc3ec040481c0e0afb15ca9ca3f237"},
+    {file = "myserver-0.0.5.tar.gz", hash = "sha256:916a214e2507ed7f8ec495de43eaf98b61d24a0f8fddc280edde98108075ab65"},
+]
+
+[[package]]
 name = "packaging"
 version = "25.0"
 description = "Core utilities for Python packages"
@@ -264,4 +276,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "2eef76322ce2f41c72abe90f602b5e08d543de7d35696025a74033dce7572a99"
+content-hash = "9e11b34b99394e25dd15e3e97b6a43dfa9cda220128bcd456663038e78c9d4a9"

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Категория 1</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Боковое меню -->
+        <div class="bg-dark text-white p-3" style="width: 250px; height: 100vh;">
+            <h4>Меню</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="main.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="order.html">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="order.html">Заказы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-primary" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+
+            <div class="mt-auto">
+                <div class="dropdown">
+                    <a href="#" class="d-block text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Пользователь
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Профиль</a></li>
+                        <li><a class="dropdown-item" href="#">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-light">
+            <h2 class="my-4">Контакты</h2>
+            <div class="row">
+                <!-- Форма -->
+                <div class="col-md-6 bg-light p-3 rounded">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="name" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Почта</label>
+                            <div class="input-group">
+                                <span class="input-group-text">@</span>
+                                <input type="email" class="form-control" id="email" required />
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Сообщение</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+
+                <!-- Информация о контактах -->
+                <div class="col-md-6">
+                    <h4>Наши контакты</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p>
+                        While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
