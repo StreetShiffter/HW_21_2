@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Категория 1</title>
+    <title>Категория</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="d-flex">
         <!-- Боковое меню -->
         <div class="bg-dark text-white p-3" style="width: 250px; height: 100vh;">
-            <h4>Меню</h4>
+            <h4 class="mb-4">Меню</h4>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a class="nav-link active text-white" href="main.html">Главная</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="order.html">Категории</a>
-                </li>
-                <li class="nav-item">
+                 <li class="nav-item">
                     <a class="nav-link text-white" href="order.html">Заказы</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white bg-primary" href="contacts.html">Контакты</a>
+                    <a class="nav-link text-white" href="category.html">Категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white bg-danger" href="contacts.html">Контакты</a>
                 </li>
             </ul>
 
             <div class="mt-auto">
                 <div class="dropdown">
-                    <a href="#" class="d-block text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="btn btn-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Пользователь
-                    </a>
+                    </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Профиль</a></li>
                         <li><a class="dropdown-item" href="#">Выход</a></li>
@@ -40,9 +41,9 @@
         </div>
 
         <!-- Основной контент -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 bg-light">
-            <h2 class="my-4">Контакты</h2>
-            <div class="row">
+        <div class="container-fluid p-4">
+            <h1 class="my-4 mt-0 d-flex justify-content-center">Контакты</h1>
+            <div class="row d-flex p-4 ms-2 justify-content-center" style="margin-left: 200px">
                 <!-- Форма -->
                 <div class="col-md-6 bg-light p-3 rounded">
                     <form>
@@ -61,27 +62,32 @@
                             <label for="message" class="form-label">Сообщение</label>
                             <textarea class="form-control" id="message" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Отправить</button>
+                        <button type="submit" class="btn btn-danger">Отправить</button>
                     </form>
                 </div>
 
                 <!-- Информация о контактах -->
-                <div class="col-md-6">
+                <div class="col-md-6 p-3">
                     <h4>Наши контакты</h4>
+                    Контакты — ООО «Рога и копыта»<br>
+                    Свяжитесь с нами, чтобы узнать больше о наших услугах или задать вопросы.<br>
+                    Адрес: г. Москва, ул. Вымышленная, д. 123<br>
+                    Телефон: +7 (495) 123-45-67<br>
+                    Email: info@rogaikopyta.ru<br>
+                    Время работы: Пн–Пт, с 9:00 до 18:00<br>
+                    <br>
+                    <p>Мы всегда на связи и рады помочь!</p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <p>
-                        While these feedback styles cannot be styled with CSS, you can still customize the feedback text through JavaScript.
+                        ⚠️Все товары являются вымышленными⚠️
                     </p>
                 </div>
             </div>
-        </main>
+        </div>
     </div>
 </div>
 
+<div class="d-flex align-items-end justify-content-between">
     <script src="../js/bootstrap.bundle.min.js"></script>
+    </div>
 </body>
 </html>
